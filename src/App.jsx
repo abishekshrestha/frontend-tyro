@@ -7,7 +7,6 @@ import { Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
     <main>
-      {/* <Search /> */}
       <Home />
       <div class="container mx-auto px-4">
         <Link

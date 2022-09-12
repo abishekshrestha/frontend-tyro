@@ -38,7 +38,6 @@ const data = {
 };
 
 test("renders the plot, poster, actors and released", () => {
-  const testTitle = "Hello world";
   const screen = render(
     <BrowserRouter>
       <MovieDescription

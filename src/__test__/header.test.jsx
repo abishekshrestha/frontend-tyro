@@ -4,7 +4,7 @@ import * as React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Header from "../components/Header/Header";
 
-test("renders the title provided to header", () => {
+test("renders the header", () => {
   const testTitle = "Hello world";
   const mockChangeHandler = jest.fn();
   const screen = render(
