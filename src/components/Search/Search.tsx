@@ -1,7 +1,7 @@
 import Header from "components/Header/Header";
 import React from "react";
 
-const Home = () => {
+const Search = () => {
   const [searchInput, setSearchInput] = React.useState("");
 
   const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Search;

@@ -21,7 +21,7 @@ test("renders the header", () => {
   expect(screen.getByText(testTitle)).toBeInTheDocument();
   expect(searchInput.value).toBe("default-input");
   expect(screen.getByText("Search").getAttribute("href")).toBe(
-    "/movie?search=default-input"
+    "/?search=default-input"
   );
   fireEvent.change(searchInput, { target: { value: "spider" } });
   expect(mockChangeHandler).toBeCalled();

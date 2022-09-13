@@ -10,7 +10,7 @@ export type Movie = {
 
 const MovieCard = ({ title, thumbnailUrl, year, imdbID }: Movie) => {
   return (
-    <Link to={`/movie/${imdbID}`}>
+    <Link to={`/${imdbID}`}>
       <div className="transition ease-in-out delay-0 hover:scale-105 flex flex-col p-2 sm:p-4 shadow-md rounded-md justify-between hover:text-blue-900 hover:cursor-pointer h-full">
         <img className="pb-4 " src={thumbnailUrl} alt="card-poster" />
         <div>

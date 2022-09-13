@@ -18,14 +18,14 @@ const Header = ({
         <div className="container mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:flex flex-row lg:justify-between lg:px-8">
           <div className="max-w-xl">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              <Link to="/movie">{title}</Link>
+              <Link to="/">{title}</Link>
             </h2>
           </div>
           <form
             className="mt-4 sm:flex sm:max-w-md w-full"
             onSubmit={(e) => {
               e.preventDefault();
-            }}
+          }}
           >
             <input
               type="text"
@@ -38,7 +38,7 @@ const Header = ({
             />
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <Link
-                to={`movie?search=${searchInput}`}
+                to={`/?search=${searchInput}`}
                 className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hove:bg-indigio-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 Search
