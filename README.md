@@ -1,3 +1,9 @@
+## How to run the project
+- Run `npm start`
+
+## How to test the project
+- Run `npm test`
+
 ## Task for the candidate  
 Create a single-page web application - Getflix - that allows a user to enter criteria into a search input field and display matching titles on the page. For each search result, show the title, the poster, and year it released.  
 Clicking on a title should bring up a detailed view of the title - plot, cast, etc.  
