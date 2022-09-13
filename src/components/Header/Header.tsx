@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 interface IProps {
   title: string;
@@ -12,6 +12,12 @@ const Header = ({
   searchInput,
   changeHandler,
 }: IProps) => {
+  const navigate = useNavigate();
+
+  const handleEnterOnInput = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    e.key === "Enter" && navigate(`/?search=${searchInput}`);
+  };
+
   return (
     <div>
       <div className="bg-gray-800">
@@ -23,9 +29,7 @@ const Header = ({
           </div>
           <form
             className="mt-4 sm:flex sm:max-w-md w-full"
-            onSubmit={(e) => {
-              e.preventDefault();
-          }}
+            onSubmit={(e) => e.preventDefault()}
           >
             <input
               type="text"
@@ -35,6 +39,7 @@ const Header = ({
               placeholder="Enter movie name"
               value={searchInput}
               onChange={changeHandler}
+              onKeyPress={handleEnterOnInput}
             />
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <Link

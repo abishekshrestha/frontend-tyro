@@ -8,7 +8,7 @@ export default function App() {
   return (
     <main>
       <Search />
-      <div class="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <Link
           className="block rounded-md w-40 mt-10 mb-10 text-center p-4 bg-indigo-500 text-white"
           to="/"
